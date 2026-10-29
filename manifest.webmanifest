@@ -1,0 +1,10 @@
+{
+  "name": "NEXT SHIFT — Hockey Development",
+  "short_name": "NEXT SHIFT",
+  "description": "Your personal hockey performance and hockey IQ workspace.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f6f5ef",
+  "theme_color": "#183f32",
+  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
