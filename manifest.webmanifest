@@ -1,7 +1,7 @@
 {
   "name": "NEXT SHIFT — Hockey Development",
   "short_name": "NEXT SHIFT",
-  "description": "Your personal hockey performance and hockey IQ workspace.",
+  "description": "Your free hockey development, skills, mindset and performance workspace.",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#f6f5ef",

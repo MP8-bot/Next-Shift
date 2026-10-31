@@ -1,32 +1,27 @@
-# NEXT SHIFT 2.0 — Free PWA starter
+# NEXT SHIFT 3.0 — free hockey development PWA
 
-A static, installable Progressive Web App for hockey performance, planning, skill development, nutrition education and hockey IQ. Built with plain HTML, CSS and JavaScript. No paid API or external JavaScript dependencies.
+This is an additive upgrade to NEXT SHIFT 2.0. It preserves the existing planner, off-ice exercise library, stickhandling, 12 Hockey IQ lessons, film room, fuel & recovery, journal and local backup/import.
 
-## Features
-- Dashboard with upcoming schedule and learning progress.
-- Visual seven-day calendar, previous/next week navigation, activity icons, filters, add/remove events, and a transparent readiness-aware planning suggestion.
-- Expanded off-ice exercise library across speed, power, strength, core, stability, mobility and recovery.
-- Stickhandling drill library with on-ice/off-ice options and simple 5/10/15-minute session builder.
-- Twelve Hockey IQ lessons, personal cue library, and interactive decision-making scenarios.
-- Fuel & Recovery section with a simple daily drink log, in-app hydration check-ins, game-day checklist, and educational content about carbohydrates, protein, fats, micronutrients, hydration, and tournament fueling.
-- Film-room prompts with outbound YouTube search links.
-- Performance journal, JSON backup export/import, and local browser storage.
-- PWA manifest and service worker for installability/offline shell.
+## New in 3.0
+- Shooting Academy: shot-type drills, on/off-ice ideas, short session builder and technique checkpoints.
+- Mindset Academy: focus, resets, visualization, confidence and a pre-game checklist.
+- Elite Habits: daily habit check-in and a rolling 7-day consistency snapshot.
+- Performance Analysis: Polar screenshot preview plus manual HR session entry, transparent average-HR × duration estimate, and a 60-second HR drop calculation when both values are supplied.
 
 ## Important limitations
-- Data is stored locally in each browser/device; cloud sync and accounts are not included.
-- Hydration check-ins are in-app only. Reliable notifications while the app is closed are not implemented.
-- Film links are searches, not a curated or automatically updated video feed.
-- Planner guidance and exercise cards are general educational templates, not medical advice or a substitute for a coach/physio/sports dietitian.
-- Nutrition content is general education, not a personalized diet plan. Fluid needs vary by athlete and conditions; this app intentionally avoids prescriptive fluid or calorie targets.
-- Browser storage can be cleared. Export a JSON backup regularly, especially before changing files or devices.
+- Completely free, no account, subscription or paid API.
+- Data is stored in this browser on this device. Export a JSON backup before changing devices or browser data. Import remains available in Journal & Backup.
+- The Polar image is preview-only and is not stored. This version does not automatically interpret graph pixels, detect hockey shifts or infer exact recovery from a screenshot. Enter values from Polar yourself.
+- HR calculations are descriptive estimates, not medical advice or a readiness diagnosis. Compare sessions only when conditions and measurement methods are similar.
+- The habit tracker is a supportive reflection tool, not a score of personal worth.
 
-## Publish with GitHub Pages
-1. Back up the current app data using **Performance journal → Export backup** if you have data you need to keep.
-2. Unzip this package.
-3. Upload the *contents* of the `NEXT_SHIFT` folder to the root of your existing public `next-shift` GitHub repository, replacing files with the same names. Keep `index.html` at repository root.
-4. Commit the changes to the `main` branch. GitHub Pages should redeploy automatically.
-5. Wait for deployment, then refresh the existing website. If the Home Screen app shows the old version, fully close it and reopen; service-worker caches may take a moment to update.
+## Update on GitHub Pages
+1. In the current app, open Journal & Backup → Export backup. Keep the JSON file somewhere safe.
+2. Open your existing GitHub repository.
+3. Upload and replace the seven files at the repository root: `index.html`, `app.js`, `styles.css`, `manifest.webmanifest`, `sw.js`, `icon.svg`, and `README.md`. Do not put them inside an extra nested folder.
+4. Commit the changes. Wait for GitHub Pages to publish.
+5. Open the app in Safari. If the old version remains, close it and reopen; if needed, visit the Pages URL in a Private tab once to refresh the service worker cache.
+6. Your old local data should remain because the storage key is unchanged (`nextShiftData_v1`). If anything looks missing, import the backup you exported in step 1.
 
 ## Local testing
-Serve the folder from a local HTTP server (service workers do not work reliably from `file://`) and open `index.html` through that server.
+Open `index.html` via a local web server for full PWA/service-worker behavior.
