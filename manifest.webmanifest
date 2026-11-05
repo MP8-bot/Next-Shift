@@ -5,6 +5,6 @@
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#f6f5ef",
-  "theme_color": "#183f32",
-  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+  "theme_color": "#bd171f",
+  "icons": [{"src":"logo.jpg","sizes":"any","type":"image/jpeg","purpose":"any"}]
 }

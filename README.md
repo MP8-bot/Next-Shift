@@ -1,27 +1,27 @@
-# NEXT SHIFT 3.0 — free hockey development PWA
+# NEXT SHIFT — 3.1 update
 
-This is an additive upgrade to NEXT SHIFT 2.0. It preserves the existing planner, off-ice exercise library, stickhandling, 12 Hockey IQ lessons, film room, fuel & recovery, journal and local backup/import.
+A free, static hockey-development PWA for GitHub Pages. No paid APIs, accounts or subscriptions are required.
 
-## New in 3.0
-- Shooting Academy: shot-type drills, on/off-ice ideas, short session builder and technique checkpoints.
-- Mindset Academy: focus, resets, visualization, confidence and a pre-game checklist.
-- Elite Habits: daily habit check-in and a rolling 7-day consistency snapshot.
-- Performance Analysis: Polar screenshot preview plus manual HR session entry, transparent average-HR × duration estimate, and a 60-second HR drop calculation when both values are supplied.
+## What's new in 3.1
+- Your hand-drawn NEXT SHIFT logo is included as `logo.jpg`; the app header and PWA icon use the new red/black hockey identity.
+- Daily original mindset quote, favourite toggle and daily reflection.
+- Calendar sessions open an editor: change name, type, date, time, duration and RPE without deleting/recreating the session.
+- Each calendar session has a training log. Gym logs support rows for exercise, sets, reps, weight and focus; skill sessions support drill, duration, repetitions and focus.
+- Off-ice exercise cards include a movement sketch, general muscle-group tags, execution cues, hockey connection and scaling/safety notes.
+- Service-worker cache is bumped to `next-shift-v4` so GitHub Pages clients fetch the new files.
 
-## Important limitations
-- Completely free, no account, subscription or paid API.
-- Data is stored in this browser on this device. Export a JSON backup before changing devices or browser data. Import remains available in Journal & Backup.
-- The Polar image is preview-only and is not stored. This version does not automatically interpret graph pixels, detect hockey shifts or infer exact recovery from a screenshot. Enter values from Polar yourself.
-- HR calculations are descriptive estimates, not medical advice or a readiness diagnosis. Compare sessions only when conditions and measurement methods are similar.
-- The habit tracker is a supportive reflection tool, not a score of personal worth.
+## Preserving your data
+The app keeps the existing `nextShiftData_v1` localStorage key and extends its data structure. Existing records are not intentionally reset. Before updating, open Journal & Backup and export a JSON backup. Keep the backup until you have checked the updated app.
 
-## Update on GitHub Pages
-1. In the current app, open Journal & Backup → Export backup. Keep the JSON file somewhere safe.
-2. Open your existing GitHub repository.
-3. Upload and replace the seven files at the repository root: `index.html`, `app.js`, `styles.css`, `manifest.webmanifest`, `sw.js`, `icon.svg`, and `README.md`. Do not put them inside an extra nested folder.
-4. Commit the changes. Wait for GitHub Pages to publish.
-5. Open the app in Safari. If the old version remains, close it and reopen; if needed, visit the Pages URL in a Private tab once to refresh the service worker cache.
-6. Your old local data should remain because the storage key is unchanged (`nextShiftData_v1`). If anything looks missing, import the backup you exported in step 1.
+## Publish with GitHub Pages
+1. Download and unzip this package.
+2. In your existing repository, upload/replace all files at the repository root (not inside a nested folder): `index.html`, `app.js`, `styles.css`, `manifest.webmanifest`, `sw.js`, `icon.svg`, `logo.jpg`, and `README.md`.
+3. Commit directly to your Pages branch (usually `main`).
+4. Wait for the Pages deployment to finish. Reopen the app; if it still shows an old version, open the Pages URL in a private tab once to refresh the service-worker cache.
 
-## Local testing
-Open `index.html` via a local web server for full PWA/service-worker behavior.
+## Data and limitations
+- Data is stored locally in the browser on that device. Export backups regularly; there is no cloud sync.
+- The exercise movement sketch is a general visual cue, not a precise anatomical or technique demonstration. Follow the written cues, coaching and qualified medical/physio guidance for individual restrictions.
+- Muscle groups are broad educational guides; exact contribution depends on technique and individual anatomy.
+- Heart-rate screenshot preview is local to the current page session. Enter Polar values manually; the app does not automatically read the graph or diagnose recovery/readiness.
+- The daily quotes are original NEXT SHIFT reminders rather than attributed quotations, avoiding incorrect attribution.
