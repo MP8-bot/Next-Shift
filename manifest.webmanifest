@@ -1,10 +1,23 @@
 {
-  "name": "NEXT SHIFT — Hockey Development",
+  "name": "NEXT SHIFT \u2014 Athlete Performance Platform",
   "short_name": "NEXT SHIFT",
-  "description": "Your free hockey development, skills, mindset and performance workspace.",
+  "description": "A structured hockey athlete development and performance platform.",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#f6f5ef",
-  "theme_color": "#bd171f",
-  "icons": [{"src":"logo.jpg","sizes":"any","type":"image/jpeg","purpose":"any"}]
+  "background_color": "#f3f4f6",
+  "theme_color": "#bd1722",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
 }

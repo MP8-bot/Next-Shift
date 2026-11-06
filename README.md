@@ -1,27 +1,21 @@
-# NEXT SHIFT — 3.1 update
+# NEXT SHIFT — Athlete Performance Platform
 
-A free, static hockey-development PWA for GitHub Pages. No paid APIs, accounts or subscriptions are required.
+## Version 4.0 redesign
 
-## What's new in 3.1
-- Your hand-drawn NEXT SHIFT logo is included as `logo.jpg`; the app header and PWA icon use the new red/black hockey identity.
-- Daily original mindset quote, favourite toggle and daily reflection.
-- Calendar sessions open an editor: change name, type, date, time, duration and RPE without deleting/recreating the session.
-- Each calendar session has a training log. Gym logs support rows for exercise, sets, reps, weight and focus; skill sessions support drill, duration, repetitions and focus.
-- Off-ice exercise cards include a movement sketch, general muscle-group tags, execution cues, hockey connection and scaling/safety notes.
-- Service-worker cache is bumped to `next-shift-v4` so GitHub Pages clients fetch the new files.
+This update reorganizes the workspace into five main areas: Home, Train, Develop, Performance and Fuel. It applies the red/black/white visual identity and uses the supplied transparent logo artwork without redrawing it.
 
-## Preserving your data
-The app keeps the existing `nextShiftData_v1` localStorage key and extends its data structure. Existing records are not intentionally reset. Before updating, open Journal & Backup and export a JSON backup. Keep the backup until you have checked the updated app.
+### Update on GitHub Pages
+1. Export a backup from Journal & backup before replacing files.
+2. Download and unzip this package.
+3. Upload all files from the ZIP directly into the root of your existing GitHub Pages repository, replacing the matching files.
+4. Commit the changes and wait for GitHub Pages to publish.
+5. Reopen the installed app. If an old cached version remains, close it and open the website in Safari, then refresh.
 
-## Publish with GitHub Pages
-1. Download and unzip this package.
-2. In your existing repository, upload/replace all files at the repository root (not inside a nested folder): `index.html`, `app.js`, `styles.css`, `manifest.webmanifest`, `sw.js`, `icon.svg`, `logo.jpg`, and `README.md`.
-3. Commit directly to your Pages branch (usually `main`).
-4. Wait for the Pages deployment to finish. Reopen the app; if it still shows an old version, open the Pages URL in a private tab once to refresh the service-worker cache.
+### Data
+The existing `nextShiftData_v1` local-storage key is unchanged. Existing calendar, training logs, notes, lessons, checklists and HR records remain in the browser on the same device. Export a backup before updating. Data is not cloud-synced.
 
-## Data and limitations
-- Data is stored locally in the browser on that device. Export backups regularly; there is no cloud sync.
-- The exercise movement sketch is a general visual cue, not a precise anatomical or technique demonstration. Follow the written cues, coaching and qualified medical/physio guidance for individual restrictions.
-- Muscle groups are broad educational guides; exact contribution depends on technique and individual anatomy.
-- Heart-rate screenshot preview is local to the current page session. Enter Polar values manually; the app does not automatically read the graph or diagnose recovery/readiness.
-- The daily quotes are original NEXT SHIFT reminders rather than attributed quotations, avoiding incorrect attribution.
+### Branding
+`logo.png` is the supplied transparent logo. `icon-192.png` and `icon-512.png` are app launcher assets based on that artwork.
+
+### Limitations
+This remains a static, free GitHub Pages app. Polar data is manually entered; screenshots are preview-only. No generic exercise movement illustrations are used.
